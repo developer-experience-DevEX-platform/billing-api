@@ -1,0 +1,37 @@
+[project]
+name = "service"
+version = "0.1.0"
+description = "handles billing requests"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "black",
+    "httpx",
+    "psycopg[binary]",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "testcontainers[postgres]",
+]
+
+[tool.uv]
+package = false
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+markers = [
+    "integration: marks tests as integration tests",
+]

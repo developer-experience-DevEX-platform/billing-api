@@ -1,0 +1,5 @@
+site_name: 'billing-api'
+site_description: 'handles billing requests'
+
+plugins:
+  - techdocs-core

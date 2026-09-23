@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: billing-api
+  description: handles billing requests
+  annotations:
+    github.com/project-slug: developer-experience-DevEX-platform/billing-api
+    backstage.io/techdocs-ref: url:https://github.com/developer-experience-DevEX-platform/billing-api/tree/main/
+  links:
+    - title: Repository
+      url: https://github.com/developer-experience-DevEX-platform/billing-api
+    - title: Staging GitOps
+      url: https://github.com/developer-experience-DevEX-platform/platform-gitops/tree/main/environments/staging/billing-api
+    - title: Production GitOps
+      url: https://github.com/developer-experience-DevEX-platform/platform-gitops/tree/main/environments/production/billing-api
+    - title: Infrastructure stack
+      url: https://github.com/developer-experience-DevEX-platform/platform-infrastructure/tree/main/services/billing-api
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/developer-experience
