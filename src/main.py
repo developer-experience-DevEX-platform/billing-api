@@ -8,8 +8,7 @@ def health() -> dict[str, str | bool]:
         "ready": True,
         "service": "billing-api",
     }
-
-
+    
 @app.get("/ready")
 def ready() -> dict[str, bool]:
     return {"ready": True}
